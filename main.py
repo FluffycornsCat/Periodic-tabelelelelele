@@ -12,4 +12,3 @@ class default(App):
         Window.clearcolor = 1,1,1,1
         return TheScreenManager()
 default().run()
-ok

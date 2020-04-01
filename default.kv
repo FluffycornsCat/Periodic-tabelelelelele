@@ -9,8 +9,13 @@
         id: MainScreen
         name: "MainScreen"
 <MainScreen>:
+
+    Label:
+        text: "hallo"
+        color: 0,0,0,1
+
     MainButton:
         text: "[b][font=Arial]EXIT[/b][/font]"
-        pos_hint: {"center_x":0.5, "center_y":0.5}
+        pos_hint: {"center_x":0.5, "center_y":0.1}
         on_release:
-            root.Exit()
+            quit()

@@ -10,9 +10,17 @@
         name: "MainScreen"
 <MainScreen>:
 
-    Label:
-        text: "hallo"
-        color: 0,0,0,1
+    TextInput:
+        id: SearchBar
+        size_hint: 0.5, 0.05
+        pos_hint: {"center_x":0.4, "center_y":0.5}
+
+    Button:
+        text: "Search"
+        pos_hint: {"center_x": 0.8, "center_y": 0.5}
+        size_hint: 0.3, 0.05
+        on_release:
+            root.okk()
 
     MainButton:
         text: "[b][font=Arial]EXIT[/b][/font]"
